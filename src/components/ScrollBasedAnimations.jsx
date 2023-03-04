@@ -18,12 +18,8 @@ const ScrollBasedAnimations = () => {
       mouse.y * 0.8,
       0.01
     );
-    // camera.position.z = THREE.MathUtils.lerp(
-    //   camera.position.z,
-    //   Math.max(4, Math.abs(mouse.x * mouse.y * 8)),
-    //   0.01
-    // );
   });
+
   return (
     <ScrollControls pages={3}>
       <Scroll>

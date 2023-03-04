@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import React from 'react';
+import { Canvas } from '@react-three/fiber';
 import { Perf } from 'r3f-perf';
 import ScrollBasedAnimations from './components/ScrollBasedAnimations';
 
