@@ -17,8 +17,7 @@ const App = () => {
       flat
       dpr={2} // default pixel ratio
       camera={closeCameraSettings}
-      shadows={true}
-    >
+      shadows={true}>
       <Perf />
       <ambientLight intensity={0.5} />
       <directionalLight position={[1, 3, 1]} intensity={2.5} />

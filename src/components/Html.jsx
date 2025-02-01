@@ -1,50 +1,22 @@
 import React from 'react';
 
 const Html = () => {
+  //
+  const baseStyle = {
+    position: 'absolute',
+    left: '50vw',
+    margin: 0,
+  };
+
   return (
     <div
       style={{
-        fontFamily: 'sans-serif',
         fontSize: 'min(10vw, 86px)',
         lineHeight: 0.75,
-      }}
-    >
-      <h1
-        style={{
-          position: 'absolute',
-          top: '50vh',
-          left: '50vw',
-          transform: 'translateX(-50%)',
-          //   color: '#292828',
-          margin: 0,
-        }}
-      >
-        hello.
-      </h1>
-      <h1
-        style={{
-          position: 'absolute',
-          top: '150vh',
-          left: '50vw',
-          transform: 'translateX(-65%)',
-          //   color: '#292828',
-          margin: 0,
-        }}
-      >
-        Your Future
-      </h1>
-      <h1
-        style={{
-          position: 'absolute',
-          top: '250vh',
-          left: '50vw',
-          transform: 'translateX(-60%)',
-          //   color: '#292828',
-          margin: 0,
-        }}
-      >
-        Awaits
-      </h1>
+      }}>
+      <h1 style={{ ...baseStyle, top: '50vh', transform: 'translateX(-50%)' }}>Hello</h1>
+      <h1 style={{ ...baseStyle, top: '150vh', transform: 'translateX(-65%)' }}>Your Future</h1>
+      <h1 style={{ ...baseStyle, top: '250vh', transform: 'translateX(-60%)' }}> Awaits </h1>
     </div>
   );
 };
